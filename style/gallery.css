@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap');
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: sans-serif;
+  background-color: transparent;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    grid-template-rows: 8vh 70vh repeat(7,20vh) 30vh;
+    background-color: white;
+    overflow: hidden;
+}
+/* Header */
+.header{
+    background-color: #0c0841;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    padding: 20px 10px;
+}
+.header-list-item{
+    display: inline;
+    list-style: none;
+}
+.header-list-item a{
+    text-decoration: none;
+    color: white;
+    padding-left: 7px;
+}
+.header-list-item a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.float-right{
+    float: right;
+    list-style: none;
+}
+.float-left{
+    float: left;
+    list-style: none;
+}
+.facebook{
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+}
+.instagram{
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+}
+.footer{
+    grid-row: -2/-1;
+    grid-column: 1/-1;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #e4e1e1ad;
+}
+.footer label{
+    margin: 5px;
+}
+.footer label{
+    margin: 10px 1px;
+}
+.footer input{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 4px;
+    margin: 5px;
+}
+.footer button{
+    border: 0px solid transparent;
+    background-color:  #0c0841;
+    border-radius: 20px;
+    color: white;
+    padding: 4px 7px;
+    margin: 5px;
+}
+/* about me image */
+.image{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    background-image: url('https://cdn.pixabay.com/photo/2018/09/12/12/14/photographer-3672010_1280.jpg');
+    background-size: cover;
+}
+.image p{
+    font-size: 500%;
+    position: relative;
+    top: 70%;
+    left: 40%;
+    letter-spacing: 18px;
+    font-weight: 600;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+}
+.heading{
+    grid-row: 3/4;
+    grid-column: 5/8;
+    font-size: 250%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.image-1{
+    background-image: url('https://cdn.pixabay.com/photo/2021/01/10/16/00/bird-5905555__340.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-row: 4/6;
+    grid-column: 2/5;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 #00000048, 0 6px 20px 0 #00000035;
+}
+.image-2{
+    background-image: url('https://cdn.pixabay.com/photo/2016/05/02/13/17/deer-1367217__340.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-row: 4/6;
+    grid-column: 5/8;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 #00000048, 0 6px 20px 0 #00000035;
+}
+.image-3{
+    background-image: url('https://cdn.pixabay.com/photo/2015/09/06/11/40/zebras-927272__340.jpg');
+    background-size: cover;
+    grid-row: 4/6;
+    grid-column: 8/11;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 #00000048, 0 6px 20px 0 #00000035;
+}
+.image-4{
+    background-image: url('https://cdn.pixabay.com/photo/2016/01/10/09/57/butterfly-1131636__340.jpg');
+    background-size: cover;
+    grid-row: 6/8;
+    grid-column: 2/5;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 #00000048, 0 6px 20px 0 #00000035;
+}
+.image-5{
+    background-image: url('https://cdn.pixabay.com/photo/2020/04/19/18/15/fox-5064828__340.jpg');
+    background-size: cover;
+    grid-row: 6/8;
+    grid-column: 5/8;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 #00000048, 0 6px 20px 0 #00000035;
+}
+.image-6{
+    background-image: url('https://cdn.pixabay.com/photo/2016/04/03/22/41/lion-1305797__340.jpg');
+    background-size: cover;
+    grid-row: 6/8;
+    grid-column: 8/11;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 #00000048, 0 6px 20px 0 #00000035;
+}
+.image-7{
+    background-image: url('https://cdn.pixabay.com/photo/2014/08/15/21/40/snake-419043__340.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-row: 8/10;
+    grid-column: 2/5;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 #00000048, 0 6px 20px 0 #00000035;
+}
+.image-8{
+    background-image: url('https://cdn.pixabay.com/photo/2021/01/07/16/57/geese-5897932__340.jpg');
+    background-size: cover;
+    grid-row: 8/10;
+    grid-column: 5/8;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 #00000048, 0 6px 20px 0 #00000035;
+}
+.image-9{
+    background-image: url('https://cdn.pixabay.com/photo/2020/09/26/08/49/squirrel-5603496__340.jpg');
+    background-size: cover;
+    grid-row: 8/10;
+    grid-column: 8/11;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 #00000048, 0 6px 20px 0 #00000035;
+}

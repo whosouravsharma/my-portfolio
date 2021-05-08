@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap');
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: sans-serif;
+  background-color: transparent;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr repeat(3,25vw) 1fr;
+    grid-template-rows: 8vh 80vh 30vh 25vh;
+    background-color: white;
+    overflow-x: hidden;
+}
+/* Header */
+.header{
+    background-color: #0c0841;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    padding: 20px 10px;
+}
+.header-list-item{
+    display: inline;
+    list-style: none;
+}
+.header-list-item a{
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+}
+.header-list-item a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.float-right{
+    float: right;
+    list-style: none;
+}
+.facebook{
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+}
+.instagram{
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+}
+.body-left{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    background-color: black;
+    color: white;
+    text-align: end;
+    padding: 10vh 5vw;
+}
+.body-right{
+    grid-row: 2/3;
+    grid-column: 4/-1;
+    background-color: white;
+    color: black;
+    text-align: start;
+    padding: 10vh 3vw;
+}
+.welcome{
+    font-size: 700%;
+    letter-spacing: 18px;
+    font-weight: 600;
+    font-family: 'Assistant', sans-serif;
+}
+.to{
+    padding-top: 12vh;
+    font-size: 500%;
+    letter-spacing: 10px;
+    font-weight: 600;
+    font-family: 'Assistant', sans-serif;
+}
+.my{
+    padding-top: 8vh;
+    font-size: 500%;
+    letter-spacing: 10px;
+    font-weight: 600;
+    font-family: 'Assistant', sans-serif;
+}
+.portfolio{
+    padding-top: 12vh;
+    font-size: 400%;
+    letter-spacing: 10px;
+    font-weight: 600;
+    font-family: 'Assistant', sans-serif;
+}
+.footer{
+    grid-row: -2/-1;
+    grid-column: 1/-1;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #e4e1e1ad;
+}
+.footer label{
+    margin: 5px;
+}
+.footer label{
+    margin: 10px 1px;
+}
+.footer input{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 4px;
+    margin: 5px;
+}
+.footer button{
+    border: 0px solid transparent;
+    background-color:  #0c0841;
+    border-radius: 20px;
+    color: white;
+    padding: 4px 7px;
+    margin: 5px;
+}
+.details{
+    grid-row: 3/4;
+    grid-column: 2/5;
+    text-align: center;
+}
+.details p{
+    padding-top: 20px;
+    font-size: 400%;
+    font-family: 'Assistant', sans-serif;
+    color: #0c0841;
+}
